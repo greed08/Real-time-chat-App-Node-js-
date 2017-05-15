@@ -1,0 +1,14 @@
+extends layout
+
+block content
+
+    div#head_message.container
+      div#messages
+      <br>
+      div#form_1
+        form.form-horizontal
+            input.form-control#input_message(placeholder='Enter your message')
+            <br>
+            div.send
+            button.btn.btn-warning.btn-lg(type='reset') Cancel
+            button.btn.btn-success.btn-lg#send(type='Send') Send

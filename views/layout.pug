@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet' href='https://bootswatch.com/solar/bootstrap.min.css')
+    script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+    script(type='text/javascript', src='http://localhost:3003/socket.io/socket.io.js')
+    script(type='text/javascript', src='/javascripts/chat.js')
+    link(rel='stylesheet',href='https://fonts.googleapis.com/css?family=BioRhyme')
+    link(href='https://fonts.googleapis.com/css?family=Archivo+Black', rel='stylesheet')
+
+  body
+    div#jumbotron
+      h1#heading Let's Talk
+    block content
+    footer Developed By :Greed (a.k.a) Omkar
