@@ -14,3 +14,18 @@ socket.send(JSON.stringify(data));
 $('#message').val();
 });
 });
+
+$(function(){
+$('#setname').click(function(){
+socket.emit("set_name", {name: $('#input_nick').val()});
+});
+});
+$(function()
+{
+
+
+
+      $('#myModal').modal('show');
+
+
+});

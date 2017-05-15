@@ -6,9 +6,22 @@ block content
       div#messages
       <br>
       div#form_1
-        form.form-horizontal
             input.form-control#input_message(placeholder='Enter your message')
             <br>
             div.send
             button.btn.btn-warning.btn-lg(type='reset') Cancel
             button.btn.btn-success.btn-lg#send(type='Send') Send
+
+    div.modal#myModal
+      div.modal-dialog
+        div.modal-content
+          div.modal-header
+            button.close(data-dismiss='modal',aria-hidden='true',type='button') &times;
+            h4.modal-title Enter your nickname
+          div.modal-body
+            form.form-horizontal
+              input.form-control#input_nick(placeholder='Enter your nickname')
+              <br>
+          div.modal-footer
+            button.btn.btn-default(data-dismiss='modal') Close
+            button.btn.btn-success#setname(data-dismiss='modal') Set
